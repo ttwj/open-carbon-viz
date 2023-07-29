@@ -4,6 +4,10 @@
 
 `open-carbon-viz` is an open-source project aimed at generating interactive visualizations of the voluntary carbon markets. It combines the power of web scraping, Streamlit, and large language models (LLMs) like OpenAI's GPT-3.5 Turbo and Anthropic's Claude-2 to analyze and rate carbon offset projects listed under Verra.
 
+![Screenshot of Streamlit Demo 2](/screenshots/viz-screenshot-2.png?raw=true "Screenshot of Streamlit Demo 2")
+
+![Screenshot of Streamlit Demo 1](/screenshots/viz-screenshot-1.png?raw=true "Screenshot of Streamlit Demo 1")
+
 ## Features
 
 - **Data Extraction**: The `fetch_and_rate.py` script fetches project details and Project Design Document (PDD) PDFs directly from the Verra registry.
@@ -80,19 +84,17 @@ To fetch the data from Verra Registry yourself, follow these steps:
 
 Please note that fetching data directly from the Verra Registry requires compliance with the Verra Registry Terms of Use and any applicable terms and conditions set by Verra. Make sure to review and understand the terms and conditions before accessing and using the data from the Verra Registry.
 
-Keep in mind that the open-carbon-viz project also provides a scraper script (`scraper.py`) that automates the data extraction process from the Verra Registry. By using the provided script, you can save time and effort in gathering data from the Verra Registry.
-
 Remember to always respect the Verra Registry's terms and policies and use the fetched data responsibly and in accordance with applicable laws and regulations.
 
 ## Usage
 
-### Scraper Script
+### Fetch and Rate
 
-To run the scraper script:
+To run the Fetch and Rate script:
 ```
-python scraper.py
+python fetch_and_rate.py
 ```
-This will generate a CSV file with the scraped data.
+This will generate a CSV file with the fetched data from the PDDs.
 
 ### Visualization App
 
@@ -118,15 +120,6 @@ Please make sure to update tests as appropriate.
 
 `open-carbon-viz` is licensed under the MIT license.
 
-## Contact
-
-If you have any questions, feel free to open an issue or contact us.
-
----
-
-Built with ❤️ by the Open Source Community.
-
----
 
 ## Disclaimer
 
